@@ -170,6 +170,6 @@ Separação de responsabilidades (HTML, CSS, JS)
 Persistência de dados no navegador
 Design de interfaces modernas
 Lógica de programação
-👨‍💻 Autor
+👨‍💻 Autor Arthur de brito
 
 Desenvolvido para fins de estudo e prática em desenvolvimento web.
