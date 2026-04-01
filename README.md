@@ -1,136 +1,175 @@
-🎮 Projetos PHP – Jo-Ken-Pô + Gerador de Rifas
+# 🎮 Projetos Web em PHP  
+### Jo-Ken-Pô & Gerador de Rifas
 
-Este repositório contém dois projetos desenvolvidos em PHP, HTML, CSS e JavaScript:
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.x-blue?style=for-the-badge&logo=php">
+  <img src="https://img.shields.io/badge/HTML5-Structure-orange?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/CSS3-Style-blue?style=for-the-badge&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-Interactive-yellow?style=for-the-badge&logo=javascript">
+</p>
 
-🎮 Jogo Jo-Ken-Pô (Pedra, Papel e Tesoura)
-🎟️ Sistema Gerador de Rifas
+<p align="center">
+  <b>Dois projetos completos com foco em prática, interface moderna e lógica de programação</b>
+</p>
 
-Ambos os projetos foram desenvolvidos com foco em interface moderna, lógica em PHP e uso de localStorage no navegador.
+---
 
-📁 Estrutura dos Projetos
+# 📌 Sobre o Repositório
+
+Este repositório contém dois sistemas desenvolvidos com tecnologias web:
+
+- 🎮 **Jogo Jo-Ken-Pô (Pedra, Papel e Tesoura)**
+- 🎟️ **Sistema Gerador de Rifas**
+
+Ambos foram criados com foco em:
+- Aprendizado de PHP
+- Estrutura de projetos web
+- Interface moderna (UI/UX)
+- Interatividade com JavaScript
+
+---
+
+# 📁 Estrutura do Projeto
+
+
 projetos/
 │
 ├── jokenpo/
-│   ├── index.php
-│   ├── style.css
-│   └── script.js
+│ ├── index.php
+│ ├── style.css
+│ └── script.js
 │
 ├── rifa/
-│   ├── index.php
-│   ├── style.css
+│ ├── index.php
+│ └── style.css
 │
 └── README.md
-🎮 Projeto 1 — Jo-Ken-Pô
-📌 Descrição
 
-Jogo de Pedra, Papel e Tesoura contra o computador, com placar salvo no navegador e interface moderna com animações e GIFs.
 
-🧠 Lógica do jogo
-Jogada	Vence de
-Pedra	Tesoura
-Papel	Pedra
-Tesoura	Papel
+---
 
-O computador escolhe uma jogada aleatória e o sistema compara com a jogada do jogador.
+# 🎮 Projeto 1 — Jo-Ken-Pô
 
-⚙️ Funcionalidades
-Escolha entre Pedra, Papel ou Tesoura
-Computador joga aleatoriamente
-Exibição de GIF conforme a jogada
-Resultado da partida (Vitória / Derrota / Empate)
-Placar salvo com localStorage
-Botão para reiniciar placar
-Interface moderna com animações
-💾 Placar salvo no navegador
+## 🧠 Descrição
 
-O placar é salvo usando:
+Jogo clássico contra o computador com interface moderna e sistema de pontuação persistente.
 
+---
+
+## ⚙️ Funcionalidades
+
+- Escolha entre Pedra 🪨, Papel 📄 ou Tesoura ✂️  
+- Jogada aleatória do computador  
+- Resultado em tempo real  
+- Sistema de pontuação:
+  - 🏆 Vitória  
+  - 💀 Derrota  
+  - 🤝 Empate  
+- Armazenamento do placar com `localStorage`  
+- Interface animada e responsiva  
+
+---
+
+## 💡 Lógica do Jogo
+
+| Jogada | Vence de |
+|-------|---------|
+| Pedra | Tesoura |
+| Papel | Pedra |
+| Tesoura | Papel |
+
+---
+
+## 💾 Persistência de dados
+
+```javascript
 localStorage
 
-Assim, mesmo atualizando a página, o placar continua.
+O placar é salvo no navegador, permitindo continuidade mesmo após recarregar a página.
 
 ▶️ Como executar
-Coloque a pasta jokenpo dentro do htdocs (XAMPP) ou www (WAMP)
-Inicie o Apache
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+Coloque a pasta jokenpo em:
+htdocs (XAMPP)
+www (WAMP)
+Inicie o servidor Apache
 Acesse:
 http://localhost/jokenpo
 🎟️ Projeto 2 — Gerador de Rifas
-📌 Descrição
+🧠 Descrição
 
-Sistema que gera bilhetes numerados para rifas, pronto para impressão.
+Sistema para criação automática de bilhetes de rifa numerados, com layout pronto para impressão.
 
 ⚙️ Funcionalidades
-Nome da campanha
-Nome do prêmio
+Cadastro de campanha
+Definição de prêmio
 Valor do bilhete
-Quantidade de bilhetes
-Geração automática dos números
-Layout pronto para impressão
-Botão "Imprimir"
-Numeração automática (001 até o número escolhido)
-🔢 Numeração dos bilhetes
+Quantidade de bilhetes (até 1000)
+Numeração automática
+Layout organizado em grade
+Botão de impressão
+Estilo otimizado para papel
+🔢 Numeração dos Bilhetes
 
-Os bilhetes são gerados com 3 dígitos:
+Formato automático:
 
 001
 002
 003
 ...
-100
-...
-999
 
-Usando PHP:
+Implementação:
 
 str_pad($i, 3, "0", STR_PAD_LEFT);
 🖨️ Impressão
 
-O sistema possui CSS especial para impressão:
+Utiliza CSS específico:
 
 @media print
 
-Assim, ao clicar em Imprimir, apenas os bilhetes aparecem.
+Oculta elementos desnecessários e mostra apenas os bilhetes.
 
 ▶️ Como executar
-Coloque a pasta rifa dentro do htdocs
+Coloque a pasta rifa no servidor local
 Inicie o Apache
 Acesse:
 http://localhost/rifa
 🛠️ Tecnologias Utilizadas
-Tecnologia	Uso
-PHP	Lógica do sistema
-HTML	Estrutura
-CSS	Estilização
-JavaScript	Placar e interações
-localStorage	Salvar placar
+Tecnologia	Função
+PHP	Lógica backend
+HTML5	Estrutura
+CSS3	Estilização
+JavaScript	Interatividade
+localStorage	Persistência
 Google Fonts	Tipografia
 🚀 Melhorias Futuras
-Jo-Ken-Pô
+🎮 Jo-Ken-Pô
  Sistema de ranking
  Modo difícil (IA)
  Multiplayer
- Sons
- Animação 3, 2, 1, JÁ
- Login de jogador
-Rifas
- Nome do comprador
- Marcar bilhete como vendido
+ Sons e efeitos
+ Animação "3, 2, 1, JÁ"
+ Sistema de login
+🎟️ Rifas
+ Cadastro de compradores
+ Controle de bilhetes vendidos
  Sorteio automático
- Gerar número vencedor
- Exportar PDF
- QR Code no bilhete
- Banco de dados
+ Geração de número vencedor
+ Exportação em PDF
+ QR Code nos bilhetes
+ Integração com banco de dados (MySQL)
  Área administrativa
+🧠 Aprendizados
+
+Este projeto envolve conceitos importantes como:
+
+Estruturação de aplicações web
+Manipulação de formulários em PHP
+Separação de responsabilidades (HTML, CSS, JS)
+Persistência de dados no navegador
+Design de interfaces modernas
+Lógica de programação
 👨‍💻 Autor
 
-Projeto desenvolvido para estudo de:
-
-PHP
-HTML
-CSS
-JavaScript
-Lógica de programação
-Desenvolvimento Web
-📜 Licença
-
-Este projeto é livre para uso e modificação para fins de estudo.
+Desenvolvido para fins de estudo e prática em desenvolvimento web.
